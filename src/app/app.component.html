@@ -3,7 +3,7 @@
 
   <!-- Navbar brand -->
   <mdb-navbar-brand>
-    <a class="navbar-brand" href="#">Divertimento Duets</a>
+    <a class="navbar-brand" routerLink="/method">Divertimento Duets</a>
   </mdb-navbar-brand>
 
   <!-- Collapsible content -->
@@ -12,15 +12,15 @@
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link waves-light" mdbWavesEffect>Method
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/method">Method
           <span class="sr-only">(current)</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/products">Pricing</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Download Materials</a>
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="#">Download Materials</a>
       </li>
 
     </ul>
@@ -30,3 +30,58 @@
 
 </mdb-navbar>
 <!--/.Navbar-->
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+<!--Footer-->
+<footer class="page-footer elegant-color-dark pt-4 mt-4">
+
+  <!--Footer Links-->
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+
+      <!--First column-->
+      <div class="col-md-6">
+        <h5 class="title">Footer Content</h5>
+        <p>Here you can use rows and columns here to organize your footer content.</p>
+      </div>
+      <!--/.First column-->
+
+      <!--Second column-->
+      <div class="col-md-6">
+        <h5 class="title">Let's Connect</h5>
+        <ul class="list-unstyled">
+          <li>
+            <mdb-icon icon="envelope-o"></mdb-icon>
+            <a> philhollandpublications@gmail.com</a>
+          </li>
+          <li>
+            <mdb-icon icon="facebook-official"></mdb-icon>
+            <a href="https://www.facebook.com/philhollandmusic/" target=”_blank”> @PhillHollandMusic</a>
+          </li>
+          <li>
+            <mdb-icon icon="instagram"></mdb-icon>
+            <a href="https://www.instagram.com/philhollandmusic/" target=”_blank”> @PhillHollandMusic</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Second column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+
+  <!--Copyright-->
+  <div class="footer-copyright text-center py-3">
+    <div class="container-fluid">
+      © 2018 Copyright: DivertimentoDuets.co.uk
+    </div>
+  </div>
+  <!--/.Copyright-->
+</footer>
+<!--/.Footer-->
