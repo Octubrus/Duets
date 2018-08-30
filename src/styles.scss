@@ -1,16 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 .no-padding {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .background-black {
-    background-color: black;
+  background-color: black;
 }
 
 .centerer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.somePadding {
+    padding: 15%;
+}
