@@ -9,9 +9,11 @@ import { MethodComponent } from './method/method.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { BooksComponent } from './books/books.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/method', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'method', component: MethodComponent },
   { path: 'books', component: BooksComponent },
   { path: 'about', component: AboutComponent },
@@ -24,7 +26,8 @@ const routes: Routes = [
     MethodComponent,
     ContactComponent,
     AboutComponent,
-    BooksComponent
+    BooksComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
